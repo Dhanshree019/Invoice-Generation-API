@@ -1,0 +1,48 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Invoice Generation",
+    "collectionId": "f99f8690-7804-4af8-8a04-14d12ed0258f",
+    "dateExported": "2024-11-17T13:57:33.362Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3a4990d1-c96b-49e2-b51d-69c0271133c7",
+            "colId": "f99f8690-7804-4af8-8a04-14d12ed0258f",
+            "containerId": "",
+            "name": "Create Invoice",
+            "url": "{{BASE_URL}}/api/invoices/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-17T12:41:39.046Z",
+            "modified": "2024-11-17T13:03:41.272Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"invoice_number\": \"INV001\",\n  \"customer_name\": \"John Doe\",\n  \"date\": \"2024-11-12\",\n  \"details\": [\n    {\n      \"description\": \"Product A\",\n      \"quantity\": 2,\n      \"price\": 50.00,\n      \"line_total\": 100.00\n    },\n    {\n      \"description\": \"Product B\",\n      \"quantity\": 1,\n      \"price\": 75.00,\n      \"line_total\": 75.00\n    }\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "aaa18561-cdd5-47c6-b019-ddf6a5a7a9c5",
+            "colId": "f99f8690-7804-4af8-8a04-14d12ed0258f",
+            "containerId": "",
+            "name": "Update Invoice",
+            "url": "{{BASE_URL}}/api/invoices/1/",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-11-17T13:02:19.600Z",
+            "modified": "2024-11-17T13:05:24.251Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"invoice_number\": \"INV001\",\n  \"customer_name\": \"John \",\n  \"date\": \"2024-11-12\",\n  \"details\": [\n    {\n      \"description\": \"Product B\",\n      \"quantity\": 2,\n      \"price\": 50.00,\n      \"line_total\": 100.00\n    },\n    {\n      \"description\": \"Product B\",\n      \"quantity\": 1,\n      \"price\": 75.00,\n      \"line_total\": 75.00\n    }\n  ]\n}",
+                "form": []
+            }
+        }
+    ],
+    "settings": {
+        "envId": "1388d1a2-4163-4f1b-879c-07351efc00e3"
+    },
+    "ref": "VyR7QKL530Yg4JKYOl52F6Z_JgiQpNE7PhHbyqodQV2MDfAzayjzaTyXqYKGrV08i0aIJONqOXEGT8Mw2auUbA"
+}
